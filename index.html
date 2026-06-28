@@ -296,7 +296,7 @@ function openModal(id){
   const p = products.find(x=>x.id===id);
   document.getElementById("modalImg").src=p.img;
   document.getElementById("modalTitle").innerText=p.name;
-  document.getElementById("modalPrice").innerText="$"+p.price;
+  document.getElementById("modalPrice").innerText="Rs"+p.price;
   document.getElementById("modal").classList.add("active");
 }
 
