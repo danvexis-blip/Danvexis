@@ -275,8 +275,8 @@ function updateCart(){
     total+=c.price;
     cartItems.innerHTML+=`
       <div class="cart-item">
-        <span>${c.name}</span>
-        <span>$${c.price}</span>
+        <span>lkr{c.name}</span>
+        <span>lkr{c.price}</span>
       </div>
     `;
   });
@@ -296,7 +296,7 @@ function openModal(id){
   const p = products.find(x=>x.id===id);
   document.getElementById("modalImg").src=p.img;
   document.getElementById("modalTitle").innerText=p.name;
-  document.getElementById("modalPrice").innerText="Rs"+p.price;
+  document.getElementById("modalPrice").innerText="lkr"+p.price;
   document.getElementById("modal").classList.add("active");
 }
 
